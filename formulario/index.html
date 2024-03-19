@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formularios</title>
+</head>
+<body>
+    
+<h2>Fórmulario</h2>
+
+<form action="register.php" method="get">
+    <div>
+        <label> Nome</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="age"> Idade</label>
+        <input type="number">
+    </div>
+
+    <div>
+        <label for="job"> Selecione uma profissao</label>
+       <select name="job" id="">
+        <option value="Programador">Programador</option>
+        <option value="Tester">Tester</option>
+        <option value="Devops">Devops</option>
+       </select>
+    </div>
+
+    <div>
+        <label for="comment">escreva um comentario</label>
+        <textarea name="comment" ></textarea>
+
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>preencha as suas informaçoes:</legend>
+            <label for="firstname">Nome</label>
+            <input type="text" name="firstname">
+            <label for="lastname"> Sobrenome</label>
+            <input type="text" name="lastname">
+        </fieldset>
+    </div>
+
+    <div>
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor">
+
+        <datalist id="flavors">
+            <option value="cereja"></option> 
+            <option value="morango"></option> 
+            <option value="abacate"></option> 
+            <option value="chocolate"></option> 
+        </datalist>
+        
+    </div>
+
+    <div>
+        <label for="car_model">Escolha o modelo do seu carro</label>
+        <div class="radio">
+            <input type="radio"  value="bmw" name="car_model">
+            <label for="bmw">BMW</label>
+        </div>
+        <div class="radio">
+            <input type="radio"  value="bmw" name="car_model">
+            <label for="Honda">Honda</label>
+        </div>
+        <div class="radio">
+            <input type="radio"  value="bmw" name="car_model">
+            <label for="Renault">Renault</label>
+        </div>
+        <div class="radio">
+            <input type="radio"  value="bmw" name="car_model">
+            <label for="Ferrari">Ferrari</label>
+        </div>
+    </div>
+
+    <div>
+        <label for="optionals">opcionais do carro</label>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="big_tires" >
+            <label for="big_tires">Pneus Grandes</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="turbo_engine" >
+            <label for="big_tires">Motor Turbo</label>
+        </div>
+        <div class="radio">
+            <input type="checkbox" name="optionals[]" value="hybrid" >
+            <label for="big_tires">Hibrido</label>
+        </div>
+    </div>
+
+    <div>
+        <label for="birthday"> Data de nascimento</label>
+        <input type="date" name="birthday">
+    </div>
+    <div>
+        <label for="image"> Insira sua imagem</label>
+        <input type="file" name="image">
+    </div>
+    <div>
+        <label for="email"> Digite o seu email</label>
+        <input type="email" name="email">
+    </div>
+    <div>
+        <label for="value"> Digite algum valor para doaçao</label>
+        <input type="text" value="10 R$" name="value">
+    </div>
+    
+    <div>
+        <p>Tente mudar o valor</p>
+        <input type="text" value="Nao consegue moises" disabled>
+    </div>
+    <div>
+        <label for="currentjob">Digite sua profissao</label>
+        <input type="text" name="currentjob" placeholder="No que voce trabalha atualmente ">
+    </div>
+    <div>
+        <label for="birthday">Ano de nascimento</label>
+        <input type="text" placeholder="ano de nascimento" required>
+
+    </div>
+
+    <input type="reset" value="limpar" >
+    <input type="submit" value="Enviar ">
+
+
+</form>
+
+</body>
+</html>
