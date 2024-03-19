@@ -1,0 +1,58 @@
+.container{
+    max-width: 1100px;
+}
+
+.featured-image{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 25px;
+    flex: 4;
+    height: 100%;
+    background-position: center;
+    background-size: center;
+}
+
+.biography-container{
+    padding: 25px 0;
+    border-top: 1px dashed cadetblue;
+    border-bottom: 1px dashed cadetblue;
+}
+body{
+    background-color: darkcyan;
+}
+
+p{
+    font-style: italic;
+    font-size: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+
+*{
+    background-color:;
+    border-radius: 20px;
+}
+.container{
+    background-color: #fff;
+    max-width: 1100px;
+    padding: 20px 20px;
+    margin: 50px auto;
+    position: relative;}
+
+.img1{
+    width: 600px;
+
+}
+.paragrafo{
+    text-align: center;
+    font-size: 25px;
+}
+.Formula{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+ 
+
